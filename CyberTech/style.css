@@ -1,0 +1,174 @@
+
+	body {
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+		box-sizing: border-box;
+	
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-image: url('background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100vh;
+		display: flex;
+		font-family: 'Times New Roman', Times, serif;
+		
+	}
+	
+	/* Adding background image to right side */
+	.background-Right {
+		position: absolute;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		background-image: url(Images/b1.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	
+	/* Adding background image to left side */
+	.background-Left {
+		position: absolute;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background-image: url(Images/b2.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	
+	#background {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -3;
+	}
+	
+	/* Slide is used to slide the form left-right
+		sides when toggle on button */
+	#slide {
+		width: 50%;
+		max-height: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin-left: 50%;
+		position: absolute;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+			0 10px 10px rgba(0, 0, 0, 0.22);
+	}
+	
+	/* This make forms z-index greater
+	than background-image */
+	.top {
+		width: 200%;
+		height: 100%;
+		position: relative;
+		left: 0;
+		left: -100%;
+	}
+	
+	/* This indicates Login-form will
+	appear on the left side */
+	.left {
+		width: 50%;
+		height: 100%;
+		background: linear-gradient(to right, #0000ff, #62d117);
+		left: 0;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	/* This indicates Register-form
+		will appear on the right side */
+	.right {
+		width: 50%;
+		height: 100%;
+		background: linear-gradient(to right, #62d117, #ff5100);
+		right: 0;
+		position: absolute;
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+	}
+		
+	
+	/* Position the form into center
+	of the viewbox */
+	.content {
+	
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 60px;
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	
+	.content h2 {
+		color: #007604;
+		font-size: 35px;
+	}
+	
+	
+	
+	/* Input box styles */
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		border-radius: 20px;
+		transition: border-color 0.3s, transform 0.3s; /* Added transition properties */
+	}
+	
+	/* Input box hover styles */
+	input[type="text"]:hover,
+	input[type="email"]:hover,
+	input[type="password"]:hover{
+		border-color: #0099ff; /* Change border color on hover */
+		transform: scale(1.02);
+        background: linear-gradient(to right, #abff73, #ff9d6f); /* Add scaling effect on hover */
+	}	
+	
+	
+	/* off class is used to indicate
+	the active button like login
+	or register button */
+	
+	button {
+		width: auto;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		border-radius: 20px;
+	}
+	
+	.btn {
+		display: inline-block;
+		background: #238500;
+		color: #fff;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border-radius: 30px;
+		transition: color 0.3s, transform 0.3s, border-color 0.3s; /* Added border-color transition */
+		border: 2px solid transparent;
+		margin-right: 20px;
+		font-weight: bold;
+	}
+	
+	.btn:hover {
+		background: rgb(255, 255, 0);
+		color: black;
+		opacity: 0.8;
+		transform: scale(1.1);
+		border-color: #000;
+	}

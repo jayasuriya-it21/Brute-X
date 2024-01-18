@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background">
+        <div class="background-Right"></div>
+        <div class="background-Left"></div>
+    </div>
+
+    <div id="slide">
+        <div class="top">
+            <div class="left">
+                <div class="content">
+                    <h2>Registration Form</h2>
+                    <form id="registration-form" method="post" action="register.php">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required><br><br>
+
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" required><br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required><br><br>
+
+                        <button type="submit" class="btn">Register</button>
+                        <button type="button" id="LeftToRight" class="btn">Login &#8594;</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="content">
+					<img src="/Images/title.jpg" alt="" height="60px" style="padding: auto;;">
+                    <h2>Login Form</h2>
+                    <form id="login-form" method="POST" action="login.php">
+                        <label for="username">Username:</label>
+                        <input class="input1" type="text" name="username" id="username" required><br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required><br><br>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" id="RightToLeft" class="btn">&#8592; Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
