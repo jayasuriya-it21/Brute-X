@@ -15,3 +15,11 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/jayasuriya-it21/brute-x.git
+cd brute-x
+cd "Brute force tool"
+python Final-GUI.py
+```
+## Hosting
+Host the CyberTech in the local machine using Xampp
+
+
